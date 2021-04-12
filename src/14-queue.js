@@ -12,16 +12,26 @@
  */
 
 class Queue {
-  get size() {
-    throw new Error('Not implemented');
+  constructor() {
+    this.arr = [];
+    this.length = 0;
   }
 
-  enqueue(/* element */) {
-    throw new Error('Not implemented');
+  get size() {
+    return this.length;
+  }
+
+  enqueue(element) {
+    const node = new ListNode(element);
+    node.next = null;
+    this.arr.push(element);
+    this.length++;
   }
 
   dequeue() {
-    throw new Error('Not implemented');
+    const node = this.arr.shift();
+    this.length--;
+    return node;
   }
 }
 
