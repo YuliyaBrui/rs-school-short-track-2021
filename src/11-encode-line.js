@@ -20,5 +20,4 @@ function encodeLine(/* str */) {
   return result; */
 }
 
-
 module.exports = encodeLine;

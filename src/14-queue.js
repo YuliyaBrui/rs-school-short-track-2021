@@ -11,7 +11,7 @@
  *
  */
 
-class Queue {
+class Queue {/*
   constructor() {
     this.arr = [];
     this.length = 0;
@@ -32,7 +32,7 @@ class Queue {
     const node = this.arr.shift();
     this.length--;
     return node;
-  }
+  } */
 }
 
 module.exports = Queue;
