@@ -16,10 +16,10 @@ function findIndex(array, value) {
   let end = array.length;
   let half = Math.floor((start + end) / 2);
   let i = 0;
-  for (i = 0; i < array.length; i++) {
+  while (start < end) {
     if (array[half] !== value) {
-      if (value < array[half]) end = half;
-      else start = half;
+      if (value < array[half]) start = half + 1;
+      else end = half - 1;
       half = Math.floor((start + end) / 2);
       i++;
     }
