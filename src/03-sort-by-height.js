@@ -14,6 +14,7 @@ function sortByHeight(arr) {
   for (let i = 0; i < arr.length; i++) { if (arr[i] !== -1) { newArr.push(arr[i]); } }
   newArr.sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i++) { if (arr[i] === -1) { newArr.splice(i, 0, -1); } }
+  return newArr;
 }
 
 module.exports = sortByHeight;
